@@ -1,0 +1,92 @@
+html {
+    font-size: 18px;
+    background: url('/assets/imgs/bg.svg') bottom center;
+    background-color: #FFF4E5;
+    background-size: cover;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 2% 4%;
+    font-family: 'Poppins';
+
+    height: 100%;
+    /* Para garantir que o body ocupe toda a altura da tela */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Alinha os itens horizontalmente */
+    align-items: center;
+    /* Alinha os itens verticalmente (opcional, caso queira centralizar também na vertical) */
+    flex-direction: column;
+    /* Organiza os elementos na coluna */
+    gap: 40px;
+}
+
+
+.intro {
+    display: flex;
+    /* Ativa o Flexbox */
+    flex-direction: column;
+    /* Organiza os itens na direção vertical */
+    align-items: center;
+    /* Alinha os itens no centro horizontal */
+    justify-content: center;
+    /* Alinha os itens no centro vertical */
+    text-align: center;
+    /* Alinha o texto dentro do <p> ao centro */
+}
+
+.logo {
+    max-width: 70%;
+    /* Limita o tamanho da imagem para não ultrapassar o limite da tela */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+.catImg {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.keyContainer {
+    flex-grow: 1;
+    /* Faz com que as divs cresçam para preencher o espaço */
+    flex-basis: 0;
+    /* Define que o tamanho inicial de cada div é 0, permitindo que o flex-grow funcione */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid #E5D8CF;
+    border-radius: 1.25rem;
+    padding: 20px;
+    transition: all .07s ease;
+    background: #FFFDFA;
+    color: #9C8D8A;
+}
+
+#keys {
+    display: flex;
+    /* Faz com que os itens fiquem alinhados horizontalmente */
+    flex-wrap: wrap;
+    /* Permite que as divs quebrem para a linha seguinte, se necessário */
+    justify-content: space-between;
+    /* Distribui os itens igualmente com espaçamento entre eles */
+    gap: 2%;
+    /* Espaço entre as divs */
+}
+
+.finalText p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14PX;
+    color: #9C8D8A;
+}
