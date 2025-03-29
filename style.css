@@ -1,6 +1,6 @@
 html {
     font-size: 18px;
-    background: url('/assets/imgs/bg.svg') bottom center;
+    background: url('assets/imgs/bg.svg') bottom center;
     background-color: #FFF4E5;
     background-size: cover;
 }

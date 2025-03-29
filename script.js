@@ -38,7 +38,7 @@ function playSound(e) {
     // Remove a classe 'playing' e volta a imagem original quando a transição terminar
     keyContainer.addEventListener('transitionend', () => {
         keyContainer.classList.remove('playing');
-        img.src = `assets/imgs/${img.dataset.default}`; // Volta para a imagem original armazenada no dataset
+        img.src = `/meow-music-notes/assets/imgs/${img.dataset.default}`; // Volta para a imagem original armazenada no dataset
     });
 }
 
