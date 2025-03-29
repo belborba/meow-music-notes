@@ -8,7 +8,7 @@ html {
 body,
 html {
     margin: 0;
-    padding: 2% 4%;
+    padding: 1.5% 4%;
     font-family: 'Poppins';
 
     height: 100%;
@@ -81,6 +81,24 @@ html {
     /* Espaço entre as divs */
 }
 
+.playing {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border: .2rem solid #FFCACA;
+    border-radius: 1.25rem;
+    padding: 20px;
+    background: #FFFDFA;
+    color: #9C8D8A;
+    transform: scale(1.1);
+    border-color: #FFCACA;
+    box-shadow: 0 0 1rem #FFCACA;
+}
+
 .finalText p {
     margin: 0;
     display: flex;
@@ -88,5 +106,11 @@ html {
     justify-content: center;
     text-align: center;
     font-size: 14PX;
+    color: #9C8D8A;
+}
+
+p a {
+    margin: 5px 5px;
+    /* Adiciona um pequeno espaço após cada link */
     color: #9C8D8A;
 }
