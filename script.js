@@ -44,3 +44,9 @@ function playSound(e) {
 
 // Adiciona evento de teclado
 window.addEventListener("keydown", playSound);
+
+// Adiciona evento de toque/click para suportar dispositivos móveis
+document.querySelectorAll(".keyContainer").forEach((key) => {
+    key.addEventListener("touchstart", playSound);
+    key.addEventListener("click", playSound);
+});
